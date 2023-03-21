@@ -20,7 +20,7 @@ class App extends React.Component {
   async reloadData() {
     console.log("(Re)load data...");
     // Load FHIR query url
-    const fhir_query = await fetch(getHostPrefix() + "/fhir-query.json")
+    const fhir_query = await fetch(getHostPrefix() + "fhir-query.json")
     .then(response => response.json())
     .then(data => {
       if (data === null) throw Error("No FHIR query found.");
