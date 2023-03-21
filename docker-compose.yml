@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  fhir-qr-explorer:
+    build:
+      context: .
+    image: fhir-qr-explorer:latest
+    container_name: fhir-qr-explorer
+    environment:
+      - 'FHIR_ENDPOINT_PATH=http://localhost:8083/static/bundle.json'
+      - 'FHIR_ENDPOINT_FETCH_OPS={"headers": {"Accept": "application/fhir+json"}}'
+    ports:
+      - "8083:80"
+    restart: unless-stopped
