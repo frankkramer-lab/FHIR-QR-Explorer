@@ -17,7 +17,7 @@ Run the following commands after (temporarily) deploying it via Docker:
 # Copy compiled artifacts
 docker cp fhir-qr-explorer:/fhir-qr-explorer/static ./static
 # Clone HTML page
-curl http://localhost:8083/ | sed 's|static/||g' > ./static/index.html
+curl http://localhost:8083/ | sed 's|/static/||g' > ./static/index.html
 # Imitate /fhir-query.json endpoint
 echo '{"fetch":{"headers":{"Accept":"application/fhir+json"}},"url":"bundle.json"}' > ./static/fhir-query.json
 
