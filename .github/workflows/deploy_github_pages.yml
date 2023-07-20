@@ -54,6 +54,7 @@ jobs:
               cd ..
               ./src-backend/downloadResources.sh
               cp -r src-frontend/dist/* ./gh_pages/
+              cp -r src-frontend/public/* ./gh_pages/
               cp -r src-backend/static/* ./gh_pages/
               echo '{"fetch":{"headers":{"Accept":"application/fhir+json"}},"url":"bundle.json"}' > ./gh_pages/fhir-query.json
 
