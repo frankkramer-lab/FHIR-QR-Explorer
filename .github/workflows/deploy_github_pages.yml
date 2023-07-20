@@ -52,6 +52,7 @@ jobs:
               npm install
               npm run build
               cd ..
+              ./src-backend/downloadResources.sh
               cp src-frontend/dist/* ./gh_pages/
               cp src-backend/static/* ./gh_pages/
               echo '{"fetch":{"headers":{"Accept":"application/fhir+json"}},"url":"bundle.json"}' > ./gh_pages/fhir-query.json
