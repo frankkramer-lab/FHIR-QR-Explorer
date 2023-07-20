@@ -25,17 +25,17 @@ export class FilterPanel extends React.Component {
         // gender
         let qid_gender = question_ids.indexOf("1.1"); // Question ID for gender
         let labels_gender = labels[qid_gender];
-        let gender_female_id = labels_gender.indexOf("w");
+        let gender_female_id = labels_gender.indexOf("f");
 
         // Pflegehelfer
         let qid_profession = question_ids.indexOf("1.3"); // Question ID for position/profession
         let labels_profession = labels[qid_profession];
-        let profession_pflegehelfer_id = labels_profession.indexOf("Pflegehelfer");
+        let profession_nursingassistant_id = labels_profession.indexOf("Nursing assistant");
 
         const filtering_choices = [
-          {"txt": "Gesamt", "filter": {item: item_any}},
-          {"txt": "Nur Frauen ", "filter": {item: item_value /* == value */, q: qid_gender, q_s: gender_female_id, q_op: item_op_is}},
-          {"txt": "Nur Pflegehelfer ", "filter": {item: item_value, q: qid_profession, q_s: profession_pflegehelfer_id, q_op: item_op_is}},
+          {"txt": "All", "filter": {item: item_any}},
+          {"txt": "Female only ", "filter": {item: item_value /* == value */, q: qid_gender, q_s: gender_female_id, q_op: item_op_is}},
+          {"txt": "Nursing assistant only", "filter": {item: item_value, q: qid_profession, q_s: profession_nursingassistant_id, q_op: item_op_is}},
         ];
 
         // DataFrame subset panel
