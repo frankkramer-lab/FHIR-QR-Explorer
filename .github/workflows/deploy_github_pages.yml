@@ -53,7 +53,7 @@ jobs:
               npm run build
               cd ..
               cp src-frontend/dist/* ./gh_pages/
-              cp src-backend/src/* ./gh_pages/
+              cp src-backend/static/* ./gh_pages/
               echo '{"fetch":{"headers":{"Accept":"application/fhir+json"}},"url":"bundle.json"}' > ./gh_pages/fhir-query.json
 
       - name: Upload artifact
