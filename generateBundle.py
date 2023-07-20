@@ -12,68 +12,68 @@ def generateBundleItem():
                 },
                 "item": [ {
                     "linkId": "1",
-                    "text": "Allgemeine Fragen zu Ihrer Person:",
+                    "text": "General questions about your person",
                     "item": [ {
                     "linkId": "1.1",
-                    "text": "Geschlecht:",
+                    "text": "Gender",
                     "answer": [ {
-                        "valueString": random.choice(["w", "m", "d"])
+                        "valueString": random.choice(["m", "f", "d"])
                     } ]
                     }, {
                     "linkId": "1.2",
-                    "text": "Wie viele Stunden pro Woche arbeiten Sie?",
+                    "text": "How many hours per week do you work?",
                     "answer": [ {
-                        "valueString": random.choice(["39 Std./Woche", "Bis 35 Std./Woche", "Bis 20 Std./Woche", "Unter 20 Std./Woche"])
+                        "valueString": random.choice(["39 hours/week", "< 35 hours/week", "< 20 hours/week", "< 10 hours/week"])
                     } ]
                     }, {
                     "linkId": "1.3",
-                    "text": "In welcher Position sind Sie eingestellt?",
+                    "text": "What is your current job position?",
                     "answer": [ {
-                        "valueString": random.choice(["Fachkraft", "Pflegefachhelfer", "Pflegehelfer", "Sonstige"])
+                        "valueString": random.choice(["Nursing specialist", "Nursing assistant", "Other"])
                     } ]
                     }, {
                     "linkId": "1.4",
-                    "text": "Angaben zu Ihrem Alter",
+                    "text": "Information about your age",
                     "answer": [ {
-                        "valueString": random.choice(["Bis 25 Jahre", "25-40 Jahre", "40-55 Jahre", "Älter als 55 Jahre"])
+                        "valueString": random.choice(["< 25 years", "25-40 years", "40-55 years", "> 55 years"])
                     } ]
                     }, {
                     "linkId": "1.5",
-                    "text": "Wie lange haben Sie bereits Erfahrung in der Pflege?",
+                    "text": "How long have you had experience in nursing?",
                     "answer": [ {
-                        "valueString": random.choice(["0-2 Jahre", "2-6 Jahre", "6-12 Jahre", "Mehr als 12 Jahre"])
+                        "valueString": random.choice(["0-2 years", "2-6 years", "6-12 years", "> 12 years"])
                     } ]
                     } ]
                 }, {
                     "linkId": "2",
-                    "text": "Allgemeine Fragen zu Ihrer Arbeitsausstattung Bewerten Sie bitte die unten aufgeführten Arbeitsausstattungen",
+                    "text": "General questions about your work equipment: Please rate the work equipment listed below.",
                     "item": [ {
                     "linkId": "2.1",
-                    "text": "Hilfsmitteln ( z.B. Aufstehhilfe, Waage, ...)",
+                    "text": "Rate the situation on nursing aids. (e.g. stand-up aid, scales, ...)",
                     "answer": [ {
-                        "valueString": random.choice(["sehr schlecht", "schlecht", "naja", "akzeptabel", "gut", "super"])
+                        "valueString": random.choice(["very bad", "bad", "moderate", "acceptable", "good", "very good"])
                     } ]
                     } ]
                 }, {
                     "linkId": "3",
-                    "text": "Arbeitsspezifische Fragen",
+                    "text": "Work-specific issues",
                     "item": [ {
                     "linkId": "3.1",
-                    "text": "Bewerten Sie Ihre Work-Life-Balance",
+                    "text": "Rate your work-life balance.",
                     "answer": [ {
-                        "valueString": random.choice(["sehr schlecht", "schlecht", "naja", "akzeptabel", "gut", "super"])
+                        "valueString": random.choice(["very bad", "bad", "moderate", "acceptable", "good", "very good"])
                     } ]
                     }, {
                     "linkId": "3.2",
-                    "text": "Bewerten Sie die Ihnen zugesprochene Wertzschätzung als Pflegekraft",
+                    "text": "Rate the esteem in which you are held as a caregiver.",
                     "answer": [ {
-                        "valueString": random.choice(["sehr schlecht", "schlecht", "naja", "akzeptabel", "gut", "super"])
+                        "valueString": random.choice(["very bad", "bad", "moderate", "acceptable", "good", "very good"])
                     } ]
                     }, {
                     "linkId": "3.3",
-                    "text": "Bewerten Sie Ihre allgemeine Arbeitszufriedenheit in der Einrichtung",
+                    "text": "Rate your overall job satisfaction at the site.",
                     "answer": [ {
-                        "valueString": random.choice(["sehr schlecht", "schlecht", "naja", "akzeptabel", "gut", "super"])
+                        "valueString": random.choice(["very bad", "bad", "moderate", "acceptable", "good", "very good"])
                     } ]
                     } ]
                 } ]
