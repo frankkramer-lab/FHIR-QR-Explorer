@@ -105,7 +105,7 @@ class BarChartTwoAxes extends React.Component {
           plugins: {
             title: {
               display: true,
-              text: qx_txt,
+              text: qy_txt,
             },
           },
           scales: {
