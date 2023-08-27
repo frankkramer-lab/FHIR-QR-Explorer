@@ -5,10 +5,17 @@ COPY ./src-frontend /app
 RUN npm install
 RUN npm run build
 
+FROM python:3.10 as bundle_sampling
+COPY . /fhir
+RUN python3 /fhir/generateBundle.py
+
 FROM python:3.10 as layered_build
 
 COPY src-backend/ /fhir-qr-explorer
 WORKDIR /fhir-qr-explorer
+
+# Import generated static bundle.json
+COPY --from=bundle_sampling /fhir/src-backend/static/bundle.json /fhir-qr-explorer/static/bundle.json
 
 RUN python3 -m pip install setuptools wheel
 RUN python3 -m pip install -r requirements.txt
