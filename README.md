@@ -5,9 +5,9 @@ The **FHIR QR Explorer** is a client-side prototype of a web application for exp
 
 A [demo page](https://frankkramer-lab.github.io/FHIR-QR-Explorer/) is available.
 
-<kbd>![Demo image](demo.png)</kbd>
-
 **Accepted at AMIA 2023! See you in New Orleans!**
+
+<kbd>![Demo image](demo.png)</kbd>
 
 ## How to run in "production" mode
 First, update the URL `FHIR_ENDPOINT_PATH` in the `docker-compose.yml` to point to the QuestionnaireResponse Bundle API (HTTP GET).
