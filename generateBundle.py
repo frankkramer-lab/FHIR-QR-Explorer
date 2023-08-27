@@ -7,9 +7,9 @@ def generateBundleItem():
         item =  {
             "resource": {
                 "resourceType": "QuestionnaireResponse",
-                "identifier": {
+                "identifier": [{
                     "value": str(ctr)
-                },
+                }],
                 "item": [ {
                     "linkId": "1",
                     "text": "General questions about your person",

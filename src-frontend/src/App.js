@@ -107,7 +107,7 @@ class App extends React.Component {
     // We assume that the identifier has a unique string-property 'value'
     let question_responses = questionnaires.map(entry => {
       let questions = getQuestionResponses(entry["resource"], []);
-      return {"id": entry["resource"]["identifier"]["value"], "questions": questions };
+      return {"id": entry["resource"]["identifier"][0]["value"], "questions": questions };
     }).filter(item => item["questions"].length > 0);
 
     if (question_responses.length == 0) {
